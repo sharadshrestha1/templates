@@ -9,7 +9,7 @@ ctrlMod.controller('HomeCtrl', ['$scope', '$location', '$window', function ($sco
         });
 }])
     .controller('LoginCtrl', ['$scope', '$location', '$window', function ($scope, $location, $window) {
-        $scope.$root.title = 'AngularJS SPA | Sign In';
+        $scope.$root.title = 'AngularJS SPA | Sign In Test';
         // TODO: Authorize a user
         $scope.login = function () {
             $location.path('/');

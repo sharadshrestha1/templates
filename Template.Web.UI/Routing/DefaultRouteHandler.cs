@@ -30,7 +30,7 @@ namespace App.Template.Web.UI.Routing
             {
                 if (!filePath.StartsWith("~/views/", StringComparison.OrdinalIgnoreCase))
                 {
-                    filePath = filePath.Insert(2, "views/partials/");
+                    filePath = filePath.Insert(2, "views/");
                 }
 
                 if (!filePath.EndsWith(".cshtml", StringComparison.OrdinalIgnoreCase))

@@ -27,13 +27,10 @@ namespace App.Template.Web.UI
                 "~/scripts/directives/directives.js",
                 
                 //controllers
-                //"~/scripts/controllers/controllers.js",
                 "~/scripts/controllers/homeController.js",
                 "~/scripts/controllers/aboutController.js",
                 "~/scripts/controllers/addressController.js",
 
-                //routes
-                "~/scripts/routes.js",
 
                 "~/scripts/app.js"));
         }

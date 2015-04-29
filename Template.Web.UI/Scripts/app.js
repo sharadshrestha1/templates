@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 // Declares how the application should be bootstrapped. See: http://docs.angularjs.org/guide/module
-angular.module('app', ['ui.router', 'app.filters', 'app.services', 'app.directives', 'app.controllers'])
+angular.module('app', ['ui.router', 'app.controllers', 'app.filters', 'app.services', 'app.directives' ])
 
     // Gets executed during the provider registrations and configuration phase. Only providers and constants can be
     // injected here. This is to prevent accidental instantiation of services before they have been fully configured.
@@ -26,6 +26,12 @@ angular.module('app', ['ui.router', 'app.filters', 'app.services', 'app.directiv
                 url: '/login',
                 layout: 'basic',
                 templateUrl: '/views/login',
+                controller: 'LoginCtrl'
+            })
+            .state('address', {
+                url: '/address',
+                layout: 'basic',
+                templateUrl: '/views/partial/address',
                 controller: 'LoginCtrl'
             })
             .state('otherwise', {
