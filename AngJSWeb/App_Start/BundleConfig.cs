@@ -23,7 +23,11 @@ namespace App.AngJSWeb
                 "~/scripts/filters.js",
                 "~/scripts/services.js",
                 "~/scripts/directives.js",
+
                 "~/scripts/controllers.js",
+                "~/scripts/controllers/logincontroller.js",
+
+
                 "~/scripts/app.js"));
         }
     }
