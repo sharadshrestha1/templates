@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<types>
+	<!--Search Factories-->
+	<type
+			type="Template.BusinessInterface.Search.ISearchProvider, Template.BusinessInterface.Search"
+			mapTo ="Template.DataAccessLayer.Search, Template.DataAccessLayer" />
+	<!--Business Entities , Business To Business-->
+	<type type="Template.BusinessInterface.ICustomer, Template.BusinessInterface"
+		mapTo ="Template.BusinessLayer.Customer, Template.BusinessLayer" >
+	</type>
+	<type type="Template.BusinessInterface.IEmail, Template.BusinessInterface"
+		mapTo ="Template.BusinessLayer.Email, Template.BusinessLayer" >
+	</type>
+	<type type="Template.BusinessInterface.IPhone, Template.BusinessInterface"
+		mapTo ="Template.BusinessLayer.Phone, Template.BusinessLayer" >
+	</type>
+	<!--Business To Data-->
+	<type name="dataAddress" type="Template.BusinessInterface.IAddress, Template.BusinessInterface"
+	 mapTo ="Template.DataAccessLayer.Address, Template.DataAccessLayer" >
+	</type>
+	<!--Entity Factories, Business To Business-->
+	<type name="customerFactory"
+	 type="Template.BusinessInterface.Factory.IEntityFactory, Template.BusinessInterface.Factory"
+	 mapTo ="Template.BusinessLayer.CustomerFactory, Template.BusinessLayer" >
+	</type>
+
+	<type name="addressFactory"
+	 type="Template.BusinessInterface.Factory.IEntityFactory, Template.BusinessInterface.Factory"
+	mapTo ="Template.BusinessLayer.AddressFactory, Template.BusinessLayer" >
+	</type>
+	<!--Respository , Business To Data-->
+	<type name="customerRepository"
+	 type="Template.BusinessInterface.IRepository`1, Template.BusinessInterface"
+	 mapTo ="Template.DataAccessLayer.CustomerRepository, Template.DataAccessLayer" />
+	<type name="addressRepository"
+		type="Template.BusinessInterface.IRepository`1, Template.BusinessInterface"
+		mapTo ="Template.DataAccessLayer.AddressRepository, Template.DataAccessLayer" />
+	<type name="emailRepository"
+	 type="Template.BusinessInterface.IRepository`1, Template.BusinessInterface"
+	 mapTo ="Template.DataAccessLayer.EmailRepository, Template.DataAccessLayer" />
+	<type name="phoneRepository"
+	 type="Template.BusinessInterface.IRepository`1, Template.BusinessInterface"
+	 mapTo ="Template.DataAccessLayer.PhoneRepository, Template.DataAccessLayer" />
+	<!--ListItem and EntityType Getters-->
+	<type name="entityList"
+		type="Template.BusinessInterface.IEntityGetType`1, Template.BusinessInterface"
+		mapTo ="Template.DataAccessLayer.EntityListProvider, Template.DataAccessLayer" />
+	<type name="entityTypeList"
+		 type="Template.BusinessInterface.IItemGetList`1, Template.BusinessInterface"
+		 mapTo ="Template.DataAccessLayer.ItemGetList, Template.DataAccessLayer" />
+</types>

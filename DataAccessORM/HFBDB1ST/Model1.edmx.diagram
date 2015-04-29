@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="45905830f97e4f46b066128689e792c7" Name="Diagram1">
+        <EntityTypeShape EntityType="HFBWEBDATAModel.EFTHold" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.HamiltonLevel" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.Location" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.ProspectDeniedAppPrinted" Width="1.5" PointX="4.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.Prospect" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.SavingsCalculatorData" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.sysdiagram" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.ZipCode" Width="1.5" PointX="2.625" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.PasswordHintQuestion" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.State" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.UserMessage" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HFBWEBDATAModel.GetProspectCreditInfo" Width="1.5" PointX="4.75" PointY="6.375" IsExpanded="true" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

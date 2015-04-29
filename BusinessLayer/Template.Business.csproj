@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E98D724-A8AC-4EB8-BB67-168369B6E7F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Template.Business</RootNamespace>
+    <AssemblyName>Template.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net35\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DomainClass\Address.cs" />
+    <Compile Include="DomainClass\DomainBase.cs" />
+    <Compile Include="DTO\DtoBase.cs" />
+    <Compile Include="DomainClass\Email.cs" />
+    <Compile Include="DomainClass\Phone.cs" />
+    <Compile Include="DomainClass\State.cs" />
+    <Compile Include="DomainList\BaseEntityType.cs" />
+    <Compile Include="DomainList\EmailType.cs" />
+    <Compile Include="DTO\AddressDto.cs" />
+    <Compile Include="DTO\EmailDto.cs" />
+    <Compile Include="DTO\IDto.cs" />
+    <Compile Include="DTO\StateDto.cs" />
+    <Compile Include="Factories\DomainFactory\StateFactory.cs" />
+    <Compile Include="ListItemClasses\YesNoDefault.cs" />
+    <Compile Include="Factories\DomainFactory\AddressFactory.cs" />
+    <Compile Include="Factories\DomainFactory\CustomerFactory.cs" />
+    <Compile Include="Factories\DomainFactory\PhoneFactory.cs" />
+    <Compile Include="Factories\DomainFactory\EntityTypeFactory.cs" />
+    <Compile Include="Factories\SearchFactory\ConsumerSearchFactory.cs" />
+    <Compile Include="Factories\SearchFactory\NameSearchFactory.cs" />
+    <Compile Include="Factories\SearchFactory\SearchFactory.cs" />
+    <Compile Include="DomainList\AddressType.cs" />
+    <Compile Include="ListItemClasses\BaseListClass.cs" />
+    <Compile Include="DomainList\PhoneType.cs" />
+    <Compile Include="ListItemClasses\State.cs" />
+    <Compile Include="Search\NumberSearch.cs" />
+    <Compile Include="Search\NameSearch.cs" />
+    <Compile Include="Search\SearchCriteria.cs" />
+    <Compile Include="Search\SearchResult.cs" />
+    <Compile Include="Utilitys\ComponentContainer.cs" />
+    <Compile Include="Utilitys\GenericSingleton.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilitys\UserTimeStamp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessInterface\Template.Business.Interface.csproj">
+      <Project>{780C3852-9297-48CA-AFFB-AB5D1BC24EE0}</Project>
+      <Name>Template.Business.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{779B649E-EA40-42E7-8F8B-F23DE5385AB0}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationMessaging\ValidationMessaging.csproj">
+      <Project>{A8A32D57-D774-4D22-8282-E2A9930CF49A}</Project>
+      <Name>ValidationMessaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

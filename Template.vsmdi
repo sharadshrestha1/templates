@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="Lists of Tests" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <RunConfiguration id="dad426e3-786c-4182-9d64-f84c6dd49dcd" name="Local Test Run" storage="localtestrun.testrunconfig" type="Microsoft.VisualStudio.TestTools.Common.TestRunConfiguration, Microsoft.VisualStudio.QualityTools.Common,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestList>
+  <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    <TestLinks>
+      <TestLink id="e0e8ba64-0f3a-2ed4-0f37-6c61cb178323" name="UpdateCustomerTest" storage="dataaccesstest\bin\debug\testtemplate.dll" enabled="false" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="dbb79a4a-f149-107c-caa9-33d55c502a58" name="CustomerLoggerTest" storage="dataaccesstest\bin\debug\testtemplate.dll" enabled="false" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="07682bf8-a600-c292-bd44-f420b83cbeaa" name="AddCustomerTest" storage="dataaccesstest\bin\debug\testtemplate.dll" enabled="false" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="a96f3ab0-d2ec-86cf-c671-532821ced486" name="RemoveCustomerTest" storage="dataaccesstest\bin\debug\testtemplate.dll" enabled="false" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+</TestLists>
