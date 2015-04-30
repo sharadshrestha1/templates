@@ -22,6 +22,11 @@ angular.module('app', ['ui.router', 'app.filters', 'app.services', 'app.directiv
                 templateUrl: '/views/partials/about',
                 controller: 'AboutCtrl'
             })
+            .state('contacts', {
+                url: '/contacts',
+                templateUrl: '/views/partials/contacts',
+                controller: 'ContactCtrl'
+            })
             .state('login', {
                 url: '/login',
                 layout: 'basic',

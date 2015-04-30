@@ -23,8 +23,8 @@ namespace App.AngJSWeb.Routing
             var filePath = requestContext.HttpContext.Request.AppRelativeCurrentExecutionFilePath;
 
 
-            if (filePath.StartsWith("~/api/")) 
-                return null;
+            //if (filePath.StartsWith("~/api/")) 
+            //    return null;
 
 
             if (filePath == "~/")
