@@ -44,6 +44,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -70,6 +76,16 @@
     <Reference Include="Microsoft.Owin.Security.OAuth, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.2\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -540,6 +556,36 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessInterface\Template.Business.Interface.csproj">
+      <Project>{780c3852-9297-48ca-affb-ab5d1bc24ee0}</Project>
+      <Name>Template.Business.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLayer\Template.Business.csproj">
+      <Project>{0e98d724-a8ac-4eb8-bb67-168369b6e7f6}</Project>
+      <Name>Template.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessORM\Template.Data.ORM.csproj">
+      <Project>{a74bffe0-3336-4d45-9f7d-34ffc1fb5189}</Project>
+      <Name>Template.Data.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogginExceptionHandling\LoggingExceptionHandling.csproj">
+      <Project>{aa85851f-b5f7-4d9d-99ed-b0775ed1df8e}</Project>
+      <Name>LoggingExceptionHandling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{779b649e-ea40-42e7-8f8b-f23de5385ab0}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationLiteral\MessagingLiteral.csproj">
+      <Project>{25585344-9a6c-44ec-8e0d-6738a9e123a0}</Project>
+      <Name>MessagingLiteral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ValidationMessaging\ValidationMessaging.csproj">
+      <Project>{a8a32d57-d774-4d22-8282-e2a9930cf49a}</Project>
+      <Name>ValidationMessaging</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

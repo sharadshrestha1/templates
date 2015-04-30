@@ -25,7 +25,7 @@ angular.module('app.controllers', [])
                 method: "GET"
             })
                 .success(function (data, status, headers, config) {
-                    $scope.todoList = data;
+                    $scope.todoList = data.dto;
                 }).error(function (data, status, headers, config) {
                     $scope.message = data.error_description.replace(/["']{1}/gi, "");
                     $scope.showMessage = true;
