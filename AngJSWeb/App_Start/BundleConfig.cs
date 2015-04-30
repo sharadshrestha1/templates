@@ -23,13 +23,9 @@ namespace App.AngJSWeb
                 "~/scripts/filters.js",
                 "~/scripts/services.js",
                 "~/scripts/directives.js",
-
-                "~/scripts/controllers.js",
-                "~/scripts/controllers/logincontroller.js",
-                "~/scripts/controllers/aboutcontroller.js",
-
-
-                "~/scripts/app.js"));
+                "~/scripts/controllers.js")
+                .IncludeDirectory("~/scripts/controllers", "*.js", true)
+                .Include("~/scripts/app.js"));
         }
     }
 }
