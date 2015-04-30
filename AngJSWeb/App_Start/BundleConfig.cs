@@ -26,6 +26,7 @@ namespace App.AngJSWeb
 
                 "~/scripts/controllers.js",
                 "~/scripts/controllers/logincontroller.js",
+                "~/scripts/controllers/aboutcontroller.js",
 
 
                 "~/scripts/app.js"));

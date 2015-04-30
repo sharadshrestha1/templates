@@ -138,6 +138,7 @@
     <Content Include="Scripts\controllers.spec.js">
       <DependentUpon>controllers.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\Controllers\aboutController.js" />
     <Content Include="Scripts\Controllers\LoginController.js" />
     <Content Include="Scripts\directives.js" />
     <Content Include="Scripts\directives.spec.js">
@@ -490,12 +491,12 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Views\Login.cshtml" />
+    <Content Include="Views\partials\Login.cshtml" />
     <Content Include="Views\Index.cshtml" />
     <Content Include="Views\404.cshtml" />
     <Content Include="Views\_Layout.cshtml" />
     <Content Include="Views\_PageStart.cshtml" />
-    <Content Include="Views\About.cshtml" />
+    <Content Include="Views\partials\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
