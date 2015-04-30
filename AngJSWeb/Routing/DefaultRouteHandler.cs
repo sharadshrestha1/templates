@@ -22,6 +22,11 @@ namespace App.AngJSWeb.Routing
             //     ~/xxx         -> ~/views/404.cshtml
             var filePath = requestContext.HttpContext.Request.AppRelativeCurrentExecutionFilePath;
 
+
+            if (filePath.StartsWith("~/api/")) 
+                return null;
+
+
             if (filePath == "~/")
             {
                 filePath = "~/views/index.cshtml";
