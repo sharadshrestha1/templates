@@ -15,6 +15,7 @@ namespace App.AngJSWeb
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.Add("Default", new DefaultRoute());
+      
         }
     }
 }

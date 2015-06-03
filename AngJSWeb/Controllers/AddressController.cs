@@ -14,9 +14,11 @@ using Template.Business.Interface.Repository;
 using Template.Data.ORM;
 using Template.Data.ORM.Repository;
 using System.Data.Entity;
+using System.Web.Http.Cors;
 
 namespace App.AngJSWeb.Controllers
 {
+    [EnableCorsAttribute("https://localhost","*","*")]
     public class AddressController : ApiController
     {
         void Test(int i)
