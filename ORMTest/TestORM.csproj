@@ -76,10 +76,6 @@
       <Project>{780C3852-9297-48CA-AFFB-AB5D1BC24EE0}</Project>
       <Name>Template.Business.Interface</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\Template.Data.csproj">
-      <Project>{6A121F86-5BCD-43BC-AEC3-116FE5095A07}</Project>
-      <Name>Template.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataAccessORM\Template.Data.ORM.csproj">
       <Project>{a74bffe0-3336-4d45-9f7d-34ffc1fb5189}</Project>
       <Name>Template.Data.ORM</Name>

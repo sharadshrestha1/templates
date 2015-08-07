@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{407D9A70-BE09-46CE-B267-C2AD2CB18D3F}"
 	ProjectSection(SolutionItems) = preProject
@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Business", "BusinessLayer\Template.Business.csproj", "{0E98D724-A8AC-4EB8-BB67-168369B6E7F6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Data", "DataAccessLayer\Template.Data.csproj", "{6A121F86-5BCD-43BC-AEC3-116FE5095A07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Business.Interface", "BusinessInterface\Template.Business.Interface.csproj", "{780C3852-9297-48CA-AFFB-AB5D1BC24EE0}"
 EndProject
@@ -31,17 +29,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestValidationMessaging", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLoggingExceptionHandling", "LogginExceptionHandlingTest\TestLoggingExceptionHandling.csproj", "{550A88F9-52C4-429C-9AF2-51A600F8465B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Data.Files", "DataAccessFiles\Template.Data.Files.csproj", "{457D5094-F210-4002-9702-00F89DCA88E4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Data.ADONET", "DataAccessADO\Template.Data.ADONET.csproj", "{97DC4A07-0A40-43C8-9FD2-7588B5C9DF07}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Data.ORM", "DataAccessORM\Template.Data.ORM.csproj", "{A74BFFE0-3336-4D45-9F7D-34FFC1FB5189}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestORM", "ORMTest\TestORM.csproj", "{8FD678D0-8A11-4187-A34E-32277B472023}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{BD50C37E-9780-4382-B58B-59BD691ED0FC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.UI.MVC", "Template.UI.MVC\Template.UI.MVC.csproj", "{E107BBBD-CAB3-4B09-9A48-8437775786A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngJSWeb", "AngJSWeb\AngJSWeb.csproj", "{DCD0E6D9-D2E4-47E2-9978-948D2D1DA44D}"
 EndProject
@@ -55,10 +47,6 @@ Global
 		{0E98D724-A8AC-4EB8-BB67-168369B6E7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E98D724-A8AC-4EB8-BB67-168369B6E7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E98D724-A8AC-4EB8-BB67-168369B6E7F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A121F86-5BCD-43BC-AEC3-116FE5095A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A121F86-5BCD-43BC-AEC3-116FE5095A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A121F86-5BCD-43BC-AEC3-116FE5095A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A121F86-5BCD-43BC-AEC3-116FE5095A07}.Release|Any CPU.Build.0 = Release|Any CPU
 		{780C3852-9297-48CA-AFFB-AB5D1BC24EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{780C3852-9297-48CA-AFFB-AB5D1BC24EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780C3852-9297-48CA-AFFB-AB5D1BC24EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -95,14 +83,6 @@ Global
 		{550A88F9-52C4-429C-9AF2-51A600F8465B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{550A88F9-52C4-429C-9AF2-51A600F8465B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{550A88F9-52C4-429C-9AF2-51A600F8465B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{457D5094-F210-4002-9702-00F89DCA88E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{457D5094-F210-4002-9702-00F89DCA88E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{457D5094-F210-4002-9702-00F89DCA88E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{457D5094-F210-4002-9702-00F89DCA88E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97DC4A07-0A40-43C8-9FD2-7588B5C9DF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97DC4A07-0A40-43C8-9FD2-7588B5C9DF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97DC4A07-0A40-43C8-9FD2-7588B5C9DF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97DC4A07-0A40-43C8-9FD2-7588B5C9DF07}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A74BFFE0-3336-4D45-9F7D-34FFC1FB5189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A74BFFE0-3336-4D45-9F7D-34FFC1FB5189}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A74BFFE0-3336-4D45-9F7D-34FFC1FB5189}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -111,10 +91,6 @@ Global
 		{8FD678D0-8A11-4187-A34E-32277B472023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FD678D0-8A11-4187-A34E-32277B472023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FD678D0-8A11-4187-A34E-32277B472023}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E107BBBD-CAB3-4B09-9A48-8437775786A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E107BBBD-CAB3-4B09-9A48-8437775786A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E107BBBD-CAB3-4B09-9A48-8437775786A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E107BBBD-CAB3-4B09-9A48-8437775786A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCD0E6D9-D2E4-47E2-9978-948D2D1DA44D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCD0E6D9-D2E4-47E2-9978-948D2D1DA44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCD0E6D9-D2E4-47E2-9978-948D2D1DA44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
