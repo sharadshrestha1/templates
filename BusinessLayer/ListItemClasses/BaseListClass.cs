@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Practices.Unity;
+
 using Template.DomainInterface;
 using Template.DomainInterface.Enums;
 
@@ -23,13 +23,13 @@ namespace Template.Business
             Description = description;
         }
 
-        //static method in base class that will be used by derived class. This piece of code can stay in static
-        //static ListAll for derived class but this will eliminate the need to repeat the same code
-        protected static IItemGetList<IItemList> GetListManager()
-        {
-            var container = GenericSingleton<ComponentContainer>.GetInstance().Container;
-			return container.Resolve<IItemGetList<IItemList>>("itemGetList");
-        }
+   //     //static method in base class that will be used by derived class. This piece of code can stay in static
+   //     //static ListAll for derived class but this will eliminate the need to repeat the same code
+   //     protected static IItemGetList<IItemList> GetListManager()
+   //     {
+   //         var container = GenericSingleton<ComponentContainer>.GetInstance().Container;
+			//return container.Resolve<IItemGetList<IItemList>>("itemGetList");
+   //     }
 
         // Defining these properities in base class ensures all inherited classes have these properties
         // Marked virtual so that they can be overriden if necessary

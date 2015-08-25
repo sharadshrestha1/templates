@@ -9,7 +9,7 @@ namespace Template.Business
 
         public ISearchType CreateSearchType(ISearchCriteria SearchCriteria)
         {
-            return new NameSearch(SearchCriteria);
+            return null; // new NameSearch(SearchCriteria);
         }
 
         #endregion

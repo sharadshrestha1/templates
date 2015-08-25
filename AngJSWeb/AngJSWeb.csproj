@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -602,10 +603,6 @@
     <ProjectReference Include="..\ValidationLiteral\MessagingLiteral.csproj">
       <Project>{25585344-9a6c-44ec-8e0d-6738a9e123a0}</Project>
       <Name>MessagingLiteral</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ValidationMessaging\ValidationMessaging.csproj">
-      <Project>{a8a32d57-d774-4d22-8282-e2a9930cf49a}</Project>
-      <Name>ValidationMessaging</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

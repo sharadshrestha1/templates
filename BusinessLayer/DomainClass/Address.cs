@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Microsoft.Practices.Unity;
+
 
 using Template.Utilities;
 using Template.DomainInterface;
@@ -11,7 +11,7 @@ using Template.DomainInterface;
 
 using Template.Business.Interface.Repository;
 using Template.Business.Interface.Domain;
-using Template.ValidationMessaging;
+
 
 namespace Template.Business.Domain
 {
@@ -56,24 +56,24 @@ namespace Template.Business.Domain
 		/// <summary>
 		/// This attribute required this field not to be valid
 		/// </summary>
-		[EmptyNotValid]
+		
         public int? addressTypeId { get; set; } 
 		//SE NOTE: but the int is nullable. Could have made to int type and creating
 		// an attribute that says ZeroNotValid or something. YUDBA
 		
-		[EmptyNotValid]
+		
         public string addressLine1 { get; set; }
 
         public string addressLine2 { get; set; }
         
-		[EmptyNotValid]
+		
         public string city { get; set; }
         
-		[EmptyNotValid]
+		
         public string state { get; set; }
         
-		[EmptyNotValid]
-        [LengthValid(5)]
+		
+        
         public string zipCode { get; set; }
         
 		public string zipCodePlus { get; set; }
@@ -128,11 +128,11 @@ namespace Template.Business.Domain
 
         #region Validation
 
-        public IValidationResult Validate()
-        {
-            IValidator<IAddress> val = ValidationFactory.GetValidator<IAddress>();
-            return val.Validate(this);
-        }
+        //public IValidationResult Validate()
+        //{
+        //    IValidator<IAddress> val = ValidationFactory.GetValidator<IAddress>();
+        //    return val.Validate(this);
+        //}
 
         #endregion
 

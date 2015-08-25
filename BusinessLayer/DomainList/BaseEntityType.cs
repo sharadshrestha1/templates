@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Template.DomainInterface;
-using Microsoft.Practices.Unity; 
+ 
 
 namespace Template.Business
 {
@@ -21,15 +21,15 @@ namespace Template.Business
 		/// <summary>
 		/// Common List Getter for all EntityTypes that inherits from BaseEntityType
 		/// </summary>
-		public IEntityGetTypes<BaseEntityType> ListGetter
-		{
-			get
-			{
-				var container = GenericSingleton<ComponentContainer>.GetInstance().Container;
-				return container.Resolve<IEntityGetTypes<BaseEntityType>>("entityTypeList");
+		//public IEntityGetTypes<BaseEntityType> ListGetter
+		//{
+		//	get
+		//	{
+		//		var container = GenericSingleton<ComponentContainer>.GetInstance().Container;
+		//		return container.Resolve<IEntityGetTypes<BaseEntityType>>("entityTypeList");
 				
-			}
-		}
+		//	}
+		//}
 
 		#region IDisposable Members
 

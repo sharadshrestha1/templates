@@ -19,8 +19,8 @@ namespace Template.Business
 			switch (entType)
 			{
 				case enmEntityTypes.PhoneType:
-					using (var et = new PhoneType())
-						list = et.GetList();
+					//using (var et = new PhoneType())
+					//	list = et.GetList();
 					break;
 				case enmEntityTypes.AddressType:
 					using (var et = new AddressType())

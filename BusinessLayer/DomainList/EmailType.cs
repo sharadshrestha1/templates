@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Microsoft.Practices.Unity;
+
 using Template.DomainInterface;
 using Template.DomainInterface.Enums;
 
@@ -16,7 +16,7 @@ namespace Template.Business
 
 		public override IList<BaseEntityType> GetList()
         {
-            return ListGetter.GetEntityType(enmEntityTypes.EmailType);
+            return null; // ListGetter.GetEntityType(enmEntityTypes.EmailType);
         }
 
         public override int ID

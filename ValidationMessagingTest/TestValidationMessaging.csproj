@@ -70,10 +70,6 @@
       <Project>{25585344-9A6C-44EC-8E0D-6738A9E123A0}</Project>
       <Name>MessagingLiteral</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ValidationMessaging\ValidationMessaging.csproj">
-      <Project>{A8A32D57-D774-4D22-8282-E2A9930CF49A}</Project>
-      <Name>ValidationMessaging</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

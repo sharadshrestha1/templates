@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Template.DomainInterface;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
+
+
 using Template.ValidationMessaging.ValidationMessage;
 using Template.Business.Interface.Domain;
 

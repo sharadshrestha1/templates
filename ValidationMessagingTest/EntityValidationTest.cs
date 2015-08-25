@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using System.Configuration;
-using Template.ValidationMessaging;
+
 using Template.DomainInterface;
 using Template.BusinessLayer;
 

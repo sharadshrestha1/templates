@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Practices.Unity;
+
 using Template.Business.Interface.Domain;
 using Template.DomainInterface;
 
@@ -12,7 +12,7 @@ namespace Template.Business.Domain
 
     using Template.Business.DTO;
     using Template.Business.Interface.Repository;
-    using Template.ValidationMessaging;
+    
 
     /// <summary>
     /// Abstract base class that provides the UnityContainer functionality and some

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
+
+
 using System.Reflection;
 
 namespace Template.ValidationMessaging
@@ -13,13 +13,7 @@ namespace Template.ValidationMessaging
         public  List<IValidationRule> ValidationRuleList { get; set; }
         public IValidationResult ValidationResult { get; set; }
 
-        /// <summary>
-        /// The reason to composite MS Validators instead of using them direclty is because in any senario we would want to replace them
-        /// we can just swap out those with whatever validators we would like keeping the business layer unchanged. It create a layer
-        /// that separates direct using of 3rd party validator.
-        /// </summary>
-        protected NotNullValidator MSNotNullValidator;
-        protected StringLengthValidator msStringLengthValidator;
+
 
         public void AggregateValidationRule(IValidationRule ValidationRule)
         {

@@ -8,7 +8,7 @@ namespace Template.Business
     using Template.Business.DTO;
     using Template.Business.Interface.Domain;
     using Template.Business.Interface.Repository;
-    using Template.ValidationMessaging;
+    
 
     public class State: DomainBase<StateDto>, IDomainObject
     {
@@ -39,9 +39,9 @@ namespace Template.Business
         }
 
 
-        public  IValidationResult Validate()
-        {
-            throw new System.NotImplementedException();
-        }
+        //public  IValidationResult Validate()
+        //{
+        //    throw new System.NotImplementedException();
+        //}
     }
 }

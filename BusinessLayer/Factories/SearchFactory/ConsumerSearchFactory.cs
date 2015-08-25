@@ -24,11 +24,11 @@ namespace Template.Business
 			 */
             if (SearchCriteria.SearchType == enmSearchTypes.NumberSearch)
             {
-                return new NumberSearch(SearchCriteria);
+                return  null; // NumberSearch(SearchCriteria);
             }
             else
             {
-                return new NameSearch(SearchCriteria);
+                return null; // new NameSearch(SearchCriteria);
             }
         }
 

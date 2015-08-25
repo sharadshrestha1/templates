@@ -37,7 +37,7 @@ namespace Template.Business
 
         public static List<IItemList> GetList()
         {
-			return BaseListClass.GetListManager().GetList<YesNoDefault>();
+            return null; // BaseListClass.GetListManager().GetList<YesNoDefault>();
         }
 
 

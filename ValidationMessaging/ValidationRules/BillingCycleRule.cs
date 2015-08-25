@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Template.DomainInterface;
-using Microsoft.Practices.EnterpriseLibrary.Validation.Validators;
-using Microsoft.Practices.EnterpriseLibrary.Validation;
+
+
 using Template.Business.Interface.Domain;
 
 namespace Template.ValidationMessaging
@@ -13,9 +13,7 @@ namespace Template.ValidationMessaging
     {
         #region MS Validations
 
-        //String Length Validator as composition
-        private StringLengthValidator msStringLengthValidator;
-        private NotNullValidator msNotNullValidator;
+
 
         #endregion
 
