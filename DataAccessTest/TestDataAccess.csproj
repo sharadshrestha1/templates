@@ -69,10 +69,6 @@
       <Project>{0E98D724-A8AC-4EB8-BB67-168369B6E7F6}</Project>
       <Name>Template.Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccessLayer\Template.Data.csproj">
-      <Project>{6A121F86-5BCD-43BC-AEC3-116FE5095A07}</Project>
-      <Name>Template.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
